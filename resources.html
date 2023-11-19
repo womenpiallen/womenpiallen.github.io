@@ -70,13 +70,12 @@
         }
 
         /* Center-align the links */
-        #resources-content a {
-            text-align: center;
-            display: block;
-            margin-bottom: 10px; /* Add some spacing between the links */
-        }
         #resources-content {
             max-width: 600px; /* Set a maximum width for the content to prevent it from stretching too wide */
+            margin: 0 auto; /* Center the content within the main container */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+            gap: 20px; /* Add some gap between columns */
         }
         
     </style>
