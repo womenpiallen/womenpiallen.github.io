@@ -12,11 +12,15 @@
         h1 a {
             color: #FA365F;
             text-decoration: none;
+            text-align: left; /* Align the text to the left */
+            display: block; /* Make the link a block element to take full width */
+            margin-left: 20px; /* Add some margin to the left */
         }
         
         main img {
-            max-width: 100%;
-            margin-top: -40px; 
+            max-width: 80%;
+            margin-top: 5px; 
+            float: center;
         }
         
         body {
@@ -24,46 +28,48 @@
         }
 
         header {
-            background-color: #f0f0f0;
-            padding: 10px;
+            padding: 5px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black; /* Add the border to the header */
+            margin-bottom: 10px; /* Adjust margin to separate the border from the content */
         }
-
+        
         nav {
-            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Move the navigation bar to the right */
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
+            display: flex; 
+            justify-content: right;
+            margin-left: auto; /* Move the navigation bar to the right */
         }
 
         nav li {
             margin: 0 10px;
+            display: inline;
         }
 
         .nav-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
+            background-color: #8b9680;
+            color: black;
+            padding: 5px;
             border: none;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
         }
 
         main {
             margin: 20px;
-            text-align: center; /* Reset text-align for the main content if needed */
-            display: flex; /* Use flexbox for two-column layout */
-            flex-direction: column;
-            justify-content: space-between; /* Space between the two columns */
-            align-items: center; 
         }
 
         footer {
@@ -71,39 +77,23 @@
             margin-top: 20px;
         }
 
-        /* Center-align the links */
-        #resources-content {
-            max-width: 600px; /* Set a maximum width for the content to prevent it from stretching too wide */
-            margin: 0 auto; /* Center the content within the main container */
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-            gap: 20px; /* Add some gap between columns */
-        }
-
-        #resources-content a {
-            text-align: center;
-            display: block;
-            margin-bottom: 10px; /* Add some spacing between the links */
-        }
-        
     </style>
 </head>
-    
 <body>
 
     <header>
-        <h1><a href="index.html">Women+ in Allen</a></h1>
+        <h1 style="text-align: left;" >Women+ in Allen</h1>
         <!-- Add navigation links to your subdirectories -->
         <nav>
             <ul>
-                <li><a href="missions.html">About</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li style="margin-right: 20px; color: black; "><a href="missions.html">About</a></li>
+                <li style="margin-right: 20px; color: black; "><a href="resources.html">Resources</a></li>
+                <li style="margin-right: 20px; color: black; "><a href="events.html">Events</a></li>
+                <li style="margin-right: 20px; color: black; "><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <h2 style="text-align: center;">Campus groups and centers</h2>
         <section id="resources-content">
